@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2025_12_18_165538) do
+ActiveRecord::Schema[8.1].define(version: 2025_12_22_115728) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -27,6 +27,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_12_18_165538) do
     t.string "name"
     t.string "password"
     t.string "password_confirmation"
+    t.string "password_digest"
     t.datetime "updated_at", null: false
   end
 end
