@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [ :update, :create ]
       resources :tasks, only: [ :show, :index, :update, :destroy, :create ]
+      post "register", to: "auths#register"
+      post "login", to: "auths#login"
     end
   end
 end
